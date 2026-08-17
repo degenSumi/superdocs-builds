@@ -190,8 +190,10 @@ annotations cannot be written back surgically; HTML and Markdown have no comment
 concept. Pointing this at anything else stops immediately with a message saying
 so, rather than finding nothing and reporting success.
 
-`ThreadSource` is an interface for exactly this reason. A second source is a new
-file and no change to anything above it.
+`ThreadSource` is an interface for exactly this reason. A second source is
+mostly a new file, but not entirely: the pipeline still names and constructs the
+`.docx` source directly in order to close threads, so that one call would move
+out to the CLI before a Google Docs source could drop in.
 
 ## Judging disagreement
 
@@ -285,7 +287,7 @@ exactly that.
 uv run pytest
 ```
 
-155 tests, no API key required. They cover the claims above rather than the
+182 tests, no API key required. They cover the claims above rather than the
 plumbing: hostile comments quarantined and legitimate ones not, a killed run
 resuming without paying twice, an outage degrading into a finding instead of a
 crash, rejection changing nothing, and exactly two of six package parts
