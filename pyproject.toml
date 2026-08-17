@@ -3,6 +3,8 @@ name = "thread-resolver"
 version = "0.1.0"
 description = "Walks open comment threads in a document, drafts the edit each one implies, and closes the thread on acceptance."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
 
 dependencies = [

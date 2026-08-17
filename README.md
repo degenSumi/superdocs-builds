@@ -163,7 +163,7 @@ parts differing after a run: word/document.xml, word/commentsExtended.xml
 parts before: 6      parts after: 6
 ```
 
-Details in `../NOTES.md`.
+Details in [docs/roundtrip.md](docs/roundtrip.md).
 
 ## What it refuses to do
 
