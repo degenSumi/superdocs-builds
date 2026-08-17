@@ -50,6 +50,10 @@ your.docx  ─►  read every comment thread   (replies, resolved state, anchore
                close only the approved threads
 ```
 
+![The review screen. The contested thread names both positions and offers no
+approve option; the actionable thread below it carries a drafted
+edit.](docs/review.png)
+
 Six judgements are possible. Only one of them can produce an edit.
 
 | Disposition | Meaning | Edit drafted |
