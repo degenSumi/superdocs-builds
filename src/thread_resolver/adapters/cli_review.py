@@ -118,10 +118,10 @@ class CliReviewGate(ReviewGate):
     def _ask(self, item: ReviewItem) -> Decision:
         if item.proposed_edits:
             choices = {"a": Decision.APPROVE, "r": Decision.REJECT, "d": Decision.DEFER}
-            prompt = "[a] approve  [r] reject  [d] defer  [q] quit"
+            prompt = r"\[a] approve  \[r] reject  \[d] defer  \[q] quit"
         else:
             choices = {"r": Decision.REJECT, "d": Decision.DEFER}
-            prompt = "[r] dismiss finding  [d] leave open  [q] quit"
+            prompt = r"\[r] dismiss finding  \[d] leave open  \[q] quit"
 
         self._console.print(prompt, style="dim")
         answer = Prompt.ask("  decision", choices=[*choices, "q"], default="d", show_default=False)
