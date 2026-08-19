@@ -187,8 +187,8 @@ intact. Approving a finding that carries no edit closes nothing.
 
 ## Formats
 
-**`.docx` only, in and out.** Not a limitation of effort. A comment *thread* —
-reply parentage plus resolved state — exists as machine-readable data in a Word
+**`.docx` only, in and out.** Not a limitation of effort. A comment *thread*,
+meaning reply parentage plus resolved state, exists as machine-readable data in a Word
 file and in the Google Docs API, and nowhere else that matters here. PDF
 annotations cannot be written back surgically; HTML and Markdown have no comment
 concept. Pointing this at anything else stops immediately with a message saying
@@ -204,10 +204,10 @@ out to the CLI before a Google Docs source could drop in.
 Deciding whether several participants converged is the one judgement that needs
 language understanding. It is optional:
 
-- **with no model configured** — threads with more than one participant are
+- **with no model configured**, threads with more than one participant are
   reported `unclear` and go to a person. Every safety behaviour is intact; you
   are simply asked more often.
-- **with a judge configured** — obvious agreement is drafted, disagreement is
+- **with a judge configured**, obvious agreement is drafted, disagreement is
   reported as `contested`, and uncertainty still goes to a person.
 
 The fallback and the safe answer are the same, so an unreachable model degrades
