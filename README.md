@@ -73,8 +73,7 @@ tool has not established would be a guess dressed as a finding.
 Requires [uv](https://docs.astral.sh/uv/). No other setup.
 
 ```bash
-git clone <this repo>
-cd thread-resolver
+cd thread-resolver            # this folder, from a clone of the repository
 uv sync
 
 cp .env.example .env          # then add your key
@@ -188,8 +187,8 @@ intact. Approving a finding that carries no edit closes nothing.
 ## Formats
 
 **`.docx` only, in and out.** Not a limitation of effort. A comment *thread*,
-meaning reply parentage plus resolved state, exists as machine-readable data in a Word
-file and in the Google Docs API, and nowhere else that matters here. PDF
+meaning reply parentage plus resolved state, exists as machine-readable data in
+a Word file and in the Google Docs API, and nowhere else that matters here. PDF
 annotations cannot be written back surgically; HTML and Markdown have no comment
 concept. Pointing this at anything else stops immediately with a message saying
 so, rather than finding nothing and reporting success.
