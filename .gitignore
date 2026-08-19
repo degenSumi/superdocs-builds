@@ -15,7 +15,7 @@ wheels/
 .venv
 
 # Run state and generated output
-runs.db
+runs.db*
 out/
 *.log
 
